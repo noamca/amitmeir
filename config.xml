@@ -45,6 +45,7 @@
     </platform>
     
     <preference name="stay-in-webview" value="true" />
+    <allow-navigation href="*" />
     
 
 </widget>
