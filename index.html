@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 
 <html>
-         
+ <body>        
     <script>
              
 document.addEventListener("deviceready", onDeviceReady, false); 
 function onDeviceReady() {
     // Now safe to use the Codova API
- window.location="http://www.walla.co.il"; }             
+// window.location="http://www.walla.co.il"; }             
+alert("Hi");
+cordova.InAppBrowser.open('https://google.com', '_blank', 'location=yes');
+}
              
     </script>
-    
+   </body> 
     
         
 </html>
