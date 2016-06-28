@@ -5,21 +5,24 @@
     <script>
              
 //document.addEventListener("deviceready", onDeviceReady, false); 
-function onDeviceReady() {
+//function onDeviceReady() {
     // Now safe to use the Codova API
 // window.location="http://www.walla.co.il"; }             
 //alert("Hi");
 
 //cordova.InAppBrowser.open('http://eyeinthesky.me/amitmeir/amitmeir/users/login', '_blank', 'location=yes');
-}
+//}
 
-window.plugins.uniqueDeviceID.get(success, fail);
+//window.plugins.uniqueDeviceID.get(success, fail);
 window.location="http://eyeinthesky.me/amitmeir/amitmeir/users/login";
+var deviceId = device.uuid;
+alert(deviceId);
+
 
 function success(uuid)
 {
     alert(uuid);
-};
+}
              
     </script>
     
