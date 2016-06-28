@@ -9,8 +9,14 @@ function onDeviceReady() {
     // Now safe to use the Codova API
 // window.location="http://www.walla.co.il"; }             
 //alert("Hi");
+window.plugins.uniqueDeviceID.get(success, fail);
 cordova.InAppBrowser.open('http://eyeinthesky.me/amitmeir/amitmeir/users/login', '_blank', 'location=yes');
 }
+
+function success(uuid)
+{
+    alert(uuid);
+};
              
     </script>
     
